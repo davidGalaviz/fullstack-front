@@ -1,0 +1,25 @@
+* {
+    font-family: 'Verdana';
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.campo label {
+    width: 15%;
+}
+
+#datosCliente {
+    background-color: #55ccff;
+}
+
+#datosPedido {
+    background-color: #40ccbb;
+}
