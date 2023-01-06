@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Pizzas Full Stack</title>
-    <link rel="stylesheet" href="./css/estilos.css" type="text/css" />
-    <script src="./jquery/jquery-3.6.2.min.js"></script>
-    <script src="./js/script.js"></script>
-  </head>
-  <body>
-    <div class="logo">
-      <img src="/images/pizza.png" alt="Pizzas Full Stack" />
-      <h1>Pizzas Full Stack</h1>
-    </div>
 
-    <form action="http://localhost:5000/pizza" method="post">
-      <h2>Datos del cliente</h2>
-      <div id="datosCliente">
-        <div class="campo">
-          <label for="nombre">Nombre</label>
-          <input id="nombre" type="text" name="nombre" />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <title>Pizzas Full Stack</title>
+  <link rel="stylesheet" href="./css/estilos.css" type="text/css" />
+  <script src="./jquery/jquery-3.6.2.min.js"></script>
+  <script src="./js/script.js"></script>
+</head>
 
-        <div class="campo">
-          <label for="apellidos">Apellidos</label>
-          <input id="apellidos" type="text" name="apellidos" />
-        </div>
+<body>
+  <div class="logo">
+    <img src="/images/pizza.png" alt="Pizzas Full Stack" />
+    <h1>Pizzas Full Stack</h1>
+  </div>
 
-        <div class="campo">
-          <label for="fechaDeNacimiento">Fecha de Nacimiento</label>
-          <input id="fechaDeNacimiento" type="date" />
-        </div>
-
-        <div class="campo">
-          <label for="telefono">Número de Teléfono</label>
-          <input id="telefono" type="tel" />
-        </div>
-
-        <div class="campo">
-          <label for="direccionPostal">Dirección Postal</label>
-          <textarea id="direccionPostal" cols="30" rows="10"></textarea>
-        </div>
+  <form action="http://localhost:5000/pizza" method="post">
+    <h2>Datos del cliente</h2>
+    <div id="datosCliente">
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" name="nombre" />
       </div>
 
-      <h2>Datos del pedido</h2>
-      <div id="datosPedido">
-        <span>Tamaño de la pizza</span>
-        
-        <div>
-          <select name="tamano" id="tamano">
-            <option value="XXL">XXL</option>
-            <option value="L">Grande</option>
-            <option value="M">Mediana</option>
-            <option value="S">Pequeña</option>
-          </select>
-        </div>
-        
+      <div class="campo">
+        <label for="apellidos">Apellidos</label>
+        <input id="apellidos" type="text" name="apellidos" />
+      </div>
 
+      <div class="campo">
+        <label for="fechaDeNacimiento">Fecha de Nacimiento</label>
+        <input id="fechaDeNacimiento" type="date" />
+      </div>
+
+      <div class="campo">
+        <label for="telefono">Número de Teléfono</label>
+        <input id="telefono" type="tel" />
+      </div>
+
+      <div class="campo">
+        <label for="direccionPostal">Dirección Postal</label>
+        <textarea id="direccionPostal" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+
+    <h2>Datos del pedido</h2>
+    <div id="datosPedido">
+      <span>Tamaño de la pizza</span>
+
+      <div>
+        <select name="tamano" id="tamano">
+          <option value="XXL">XXL</option>
+          <option value="L">Grande</option>
+          <option value="M">Mediana</option>
+          <option value="S">Pequeña</option>
+        </select>
+      </div>
+
+      <span id="resultado_tamano"></span>
+
+      <div style="margin-top: 8px;">
         <span>Ingredientes deseados</span>
         <div>
           <input type="checkbox" id="jamon" value="JamónYork" />
@@ -75,7 +79,10 @@
         </div>
       </div>
 
-      <button type="submit" id="submit">Solicitar</button>
-    </form>
-  </body>
+    </div>
+
+    <button type="submit" id="submit">Solicitar</button>
+  </form>
+</body>
+
 </html>
