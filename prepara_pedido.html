@@ -45,25 +45,16 @@
       <h2>Datos del pedido</h2>
       <div id="datosPedido">
         <span>Tamaño de la pizza</span>
+        
         <div>
-          <input type="radio" id="pequeña" name="tamaño" value="S" />
-          <label for="pequeña">Pequeña</label>
+          <select name="tamano" id="tamano">
+            <option value="XXL">XXL</option>
+            <option value="L">Grande</option>
+            <option value="M">Mediana</option>
+            <option value="S">Pequeña</option>
+          </select>
         </div>
-
-        <div>
-          <input type="radio" id="mediana" name="tamaño" value="M" />
-          <label for="mediana">Mediana</label>
-        </div>
-
-        <div>
-          <input type="radio" id="grande" name="tamaño" value="L" />
-          <label for="grande">Grande</label>
-        </div>
-
-        <div>
-          <input type="radio" id="xxl" name="tamaño" value="XXL" />
-          <label for="grande">XXL</label>
-        </div>
+        
 
         <span>Ingredientes deseados</span>
         <div>
